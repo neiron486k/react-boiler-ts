@@ -1,0 +1,33 @@
+{
+  "name": "react-boiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --open",
+    "watch": "webpack --watch"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4.1.1",
+    "@types/classnames": "^2.2.8",
+    "@types/react": "^16.8.20",
+    "@types/react-dom": "^16.8.4",
+    "classnames": "^2.2.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/webpack": "^4.4.32",
+    "awesome-typescript-loader": "^5.2.1",
+    "file-loader": "^4.0.0",
+    "typescript": "^3.5.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.5.1"
+  }
+}
