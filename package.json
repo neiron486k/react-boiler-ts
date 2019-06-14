@@ -24,6 +24,7 @@
   "devDependencies": {
     "@types/webpack": "^4.4.32",
     "awesome-typescript-loader": "^5.2.1",
+    "dotenv-webpack": "^1.7.0",
     "file-loader": "^4.0.0",
     "typescript": "^3.5.1",
     "webpack": "^4.32.2",

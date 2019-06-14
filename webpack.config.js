@@ -1,9 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
-    mode: 'development',
+    mode: process.env.APP_ENV || 'development',
     entry: './src/index.tsx',
     module: {
         rules: [
@@ -28,10 +29,16 @@ module.exports = {
         extensions: [ '.tsx', '.ts', '.js' ]
     },
     plugins: [
+        new Dotenv({
+            defaults: true,
+            systemvars: true,
+            silent: true,
+            safe: true
+        }),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'public', 'index.html'),
-        })
+        }),
     ],
     devtool: 'inline-source-map',
     devServer: {
